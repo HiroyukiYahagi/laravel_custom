@@ -1,38 +1,33 @@
+$global-primary-background: #005509;
+$lighten-primary-color: #F6F6F6;
+$lighten-primary-background: #C5F1CA;
 
-// Body
-$body-bg: #f5f8fa;
 
-// Borders
-$laravel-border-color: darken($body-bg, 10%);
-$list-group-border: $laravel-border-color;
-$navbar-default-border: $laravel-border-color;
-$panel-default-border: $laravel-border-color;
-$panel-inner-border: $laravel-border-color;
+$navbar-nav-item-height: 56px !default;
 
-// Brands
-$brand-primary: #3097D1;
-$brand-info: #8eb4cb;
-$brand-success: #2ab27b;
-$brand-warning: #cbb956;
-$brand-danger: #bf5329;
+$global-medium-box-shadow: 0px 0px 2px 1px #F0F0F0;
+// $global-small-box-shadow: 0 2px 8px rgba(0,0,0,0.08) !default;
+$global-large-box-shadow: 0 14px 25px rgba(0,0,0,0.16);
+$global-xlarge-box-shadow: 0 28px 50px rgba(0,0,0,0.16);
 
-// Typography
-$icon-font-path: "~bootstrap-sass/assets/fonts/bootstrap/";
-$font-family-sans-serif: "Raleway", sans-serif;
-$font-size-base: 14px;
-$line-height-base: 1.6;
-$text-color: #636b6f;
+$global-xxlarge-font-size: 1.5rem;
+$global-xlarge-font-size: 1.25rem;
+$global-large-font-size: 1.125rem;
+$global-medium-font-size: 1.0rem;
+$global-font-size: 16px;
+$global-small-font-size: 0.875rem;
 
-// Navbar
-$navbar-default-bg: #fff;
+$global-xlarge-margin: 128px;
+$global-large-margin: 64px;
+$global-medium-margin: 32px;
+$global-margin: 16px;
+$global-small-margin: 8px ;
 
-// Buttons
-$btn-default-color: $text-color;
+$global-large-gutter: 48px;
+$global-medium-gutter: 30px;
+$global-gutter: 24px;
+$global-small-gutter: 12px;
 
-// Inputs
-$input-border: lighten($text-color, 40%);
-$input-border-focus: lighten($brand-primary, 25%);
-$input-color-placeholder: lighten($text-color, 30%);
 
-// Panels
-$panel-default-heading-bg: #fff;
+$overlay-padding-horizontal: $global-small-gutter;
+$overlay-padding-vertical: $global-small-gutter;

@@ -18,6 +18,10 @@ return [
     'title' => env('APP_TITLE', '株式会社Befard - Research Deeply &  Develop intensely'),
     'description' => env('APP_DESCRIPTION', '株式会社Befard(ビファード)は多業界に渡って新しい事業や業務改善を提案するコンサルティング会社です。'),
 
+    'company_name' => env('COMPANY_NAME', '株式会社EATAS'),
+    'company_tel' => env('COMPANY_TEL', '08088888888'),
+    'company_url' => env('COMPANY_URL', 'https://eatas.co.jp/'),
+    'company_privacy_url' => env('COMPANY_PRIVACY_URL', 'https://glug.co.jp/privacy.php'),
     /*
     |--------------------------------------------------------------------------
     | Application Environment
