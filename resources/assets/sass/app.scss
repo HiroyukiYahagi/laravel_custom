@@ -1,6 +1,17 @@
+@font-face {
+  font-family: 'Noto Sans Japanese';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/NotoSansCJKjp/NotoSansCJKjp-Thin.otf) format('opentype');
+ }
 
-// Fonts
-@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
+@font-face {
+  font-family: 'Noto Serif Japanese';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/NotoSerifCJKjp/NotoSerifCJKjp-Regular.otf) format('opentype');
+ }
+
 
 // Variables
 @import "variables";
@@ -10,5 +21,175 @@
 @import "~uikit/src/scss/variables-theme.scss";
 @import "~uikit/src/scss/mixins-theme.scss";
 
+a:not(.uk-link-reset) {
+    font-family: $base-heading-font-family;
+}
+
+// 3. Your custom mixin overwrites.
+@media (min-width: $breakpoint-small) {
+    .uk-height-small\@s {
+        height: $height-small-height !important;
+    }
+    .uk-height-medium\@s {
+        height: $height-medium-height !important;
+    }
+    .uk-height-large\@s {
+        height: $height-large-height !important;
+    }
+}
+
+
+@media (min-width: $breakpoint-medium) {
+    .uk-height-small\@m {
+        height: $height-small-height !important;
+    }
+    .uk-height-medium\@m {
+        height: $height-medium-height !important;
+    }
+    .uk-height-large\@m {
+        height: $height-large-height !important;
+    }
+}
+
+
+@media (min-width: $breakpoint-large) {
+    .uk-height-small\@l {
+        height: $height-small-height !important;
+    }
+    .uk-height-medium\@l {
+        height: $height-medium-height !important;
+    }
+    .uk-height-large\@l {
+        height: $height-large-height !important;
+    }
+}
+
+.uk-min-width-small {
+    min-width: $width-small-width !important;
+}
+
 // 4. Import UIkit.
 @import "~uikit/src/scss/uikit-theme.scss";
+
+
+.nav-logo {
+    filter: brightness(100);
+    height: $navbar-nav-item-height - 16px;
+}
+
+.base{
+    min-height: 100vh;
+}
+
+.image-wrapper{
+    position: relative;
+    overflow: hidden;
+    & > img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.facebook {
+    background-color: #3b5998;
+    &:hover{
+        background-color: darken(#3b5998, 5%);
+    }
+}
+
+.uk-button-muted {
+    background-color: $global-color;
+    color: #fff;
+    &:hover{
+        background-color: darken($global-color, 5%);
+        color: #fff;
+    }
+}
+
+.user-icon{
+    width: $navbar-nav-item-height - 12px;
+    height: $navbar-nav-item-height - 12px;
+}
+
+.uk-text-white {
+    color: #fff !important;
+}
+
+.uk-text-default {
+    color: $global-color !important;
+}
+
+.uk-navbar-dropdown {
+    border-radius: $border-rounded-border-radius;
+}
+
+.uk-background-danger {
+    background-color: $global-danger-background !important;
+}
+
+.uk-background-light-muted {
+    background-color: #FDFDFD !important;
+}
+
+.uk-background-dark-muted {
+    background-color: $global-color !important;
+}
+
+.uk-hover-muted {
+    &:hover {
+        background-color: $lighten-primary-background;
+    }
+}
+
+.uk-card-graph {
+    border-top: 3px solid $global-secondary-background;
+    background: #fff;
+    color: $global-color;
+    -webkit-box-shadow: $global-medium-box-shadow;
+    box-shadow: $global-medium-box-shadow;
+}
+
+.uk-card-life {
+    background: $life-color;
+    color: #fff;
+    -webkit-box-shadow: $global-medium-box-shadow;
+    box-shadow: $global-medium-box-shadow;
+
+    & .uk-text-muted {
+        color: lighten($life-color, 30%) !important;
+    }
+}
+
+.uk-card-heavy-sick {
+    background: $heavy-sick-color;
+    color: #fff;
+    -webkit-box-shadow: $global-medium-box-shadow;
+    box-shadow: $global-medium-box-shadow;
+
+    & .uk-text-muted {
+        color: lighten($heavy-sick-color, 30%) !important;
+    }
+}
+
+.uk-card-sick {
+    background: $sick-color;
+    color: #fff;
+    -webkit-box-shadow: $global-medium-box-shadow;
+    box-shadow: $global-medium-box-shadow;
+
+    & .uk-text-muted {
+        color: lighten($sick-color, 30%) !important;
+    }
+}
+
+.uk-card-other {
+    background: $other-color;
+    color: #fff;
+    -webkit-box-shadow: $global-medium-box-shadow;
+    box-shadow: $global-medium-box-shadow;
+
+    & .uk-text-muted {
+        color: lighten($other-color, 30%) !important;
+    }
+}

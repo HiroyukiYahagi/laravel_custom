@@ -176,6 +176,9 @@ return [
          */
         Krlove\EloquentModelGenerator\Provider\GeneratorServiceProvider::class,
 
+        // robots.txt
+        EllisTheDev\Robots\RobotsServiceProvider::class,
+
         /*
          * Application Service Providers...
          */
@@ -184,6 +187,8 @@ return [
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
+
+        App\Providers\CustomDirectiveServiceProvider::class,
 
     ],
 
