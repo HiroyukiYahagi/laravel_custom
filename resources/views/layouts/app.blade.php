@@ -12,10 +12,7 @@
     <meta name="refresh-token" content="{{ session('auth.data.refresh_token') }}">
 
     <title>
-        @if(isset($title))
-           {{ $title." | "}} 
-        @endif
-        {{ config('app.name', 'Laravel') }}
+        @if(isset($title)){{ $title." | "}}@endif{{ config('app.name', 'Laravel') }}
     </title>
 
     <meta name="description" content="@if(isset($description)){{$description}}@else{{ config('app.description', '') }}@endif">
@@ -53,9 +50,6 @@
     @endforeach
     </div>
     @endif
-    
-    <!-- jquery -->
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 
     <!-- uikit -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.38/js/uikit.js"></script>

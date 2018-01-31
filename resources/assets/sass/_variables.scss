@@ -1,15 +1,11 @@
 // 1. Your custom variables and variable overwrites.
-$global-secondary-background: #3b99fb;
-$global-primary-background: #7364A6;
+$global-secondary-background: #C93A40;
+$global-primary-background: #D16B16;
 $lighten-primary-color: #F6F6F6;
 $lighten-primary-background: #FAFAFA;
-$global-color: #6c8cae;
+$global-color: #333333;
 $global-emphasis-color: $global-color;
 
-$life-color: #93b72d;
-$heavy-sick-color: #e39287;
-$sick-color: #e08cb1;
-$other-color: #e8972e;
 
 $global-link-color: $global-secondary-background;
 $global-link-hover-color: darken($global-secondary-background, 5%);

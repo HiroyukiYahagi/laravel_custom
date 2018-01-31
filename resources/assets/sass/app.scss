@@ -91,13 +91,6 @@ a:not(.uk-link-reset) {
     }
 }
 
-.facebook {
-    background-color: #3b5998;
-    &:hover{
-        background-color: darken(#3b5998, 5%);
-    }
-}
-
 .uk-button-muted {
     background-color: $global-color;
     color: #fff;
@@ -139,57 +132,5 @@ a:not(.uk-link-reset) {
 .uk-hover-muted {
     &:hover {
         background-color: $lighten-primary-background;
-    }
-}
-
-.uk-card-graph {
-    border-top: 3px solid $global-secondary-background;
-    background: #fff;
-    color: $global-color;
-    -webkit-box-shadow: $global-medium-box-shadow;
-    box-shadow: $global-medium-box-shadow;
-}
-
-.uk-card-life {
-    background: $life-color;
-    color: #fff;
-    -webkit-box-shadow: $global-medium-box-shadow;
-    box-shadow: $global-medium-box-shadow;
-
-    & .uk-text-muted {
-        color: lighten($life-color, 30%) !important;
-    }
-}
-
-.uk-card-heavy-sick {
-    background: $heavy-sick-color;
-    color: #fff;
-    -webkit-box-shadow: $global-medium-box-shadow;
-    box-shadow: $global-medium-box-shadow;
-
-    & .uk-text-muted {
-        color: lighten($heavy-sick-color, 30%) !important;
-    }
-}
-
-.uk-card-sick {
-    background: $sick-color;
-    color: #fff;
-    -webkit-box-shadow: $global-medium-box-shadow;
-    box-shadow: $global-medium-box-shadow;
-
-    & .uk-text-muted {
-        color: lighten($sick-color, 30%) !important;
-    }
-}
-
-.uk-card-other {
-    background: $other-color;
-    color: #fff;
-    -webkit-box-shadow: $global-medium-box-shadow;
-    box-shadow: $global-medium-box-shadow;
-
-    & .uk-text-muted {
-        color: lighten($other-color, 30%) !important;
     }
 }
