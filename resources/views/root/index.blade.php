@@ -10,8 +10,8 @@
                     爆速リリース<br/>
                     しませんか？
                 </div>
-                <h1 class="uk-text-center">
-                    業界史上最速システム開発
+                <h1 class="uk-text-center  uk-text-nowrap">
+                    業界史上最速<wbr/>システム開発
                 </h1>
             </div>
             <div class="uk-width-expand">
@@ -29,22 +29,22 @@
 </div>
 
 <div class="uk-section uk-section-large uk-section-muted">
-    <div class="uk-container uk-text-center uk-text-primary">
-        <h2 class="uk-margin-large uk-heading-line uk-text-center"><span>
-            事業の立ち上げ、請け負います！
+    <div class="uk-container uk-text-center">
+        <h2 class="uk-margin-large uk-heading-line uk-text-center uk-text-primary"><span class="uk-text-nowrap">
+            事業の立ち上げ、<wbr>請け負います！
         </span></h2>
 
         <p class="uk-margin">
             ベンチャーや大企業、業界を追わず、<br />
-            <span class="uk-h3">
-                ITを活用した"新規事業の立ち上げ"
+            <span class="uk-h3 uk-text-nowrap">
+                ITを活用した<wbr/>"新規事業の立ち上げ"
             </span><br/>
             が目下の課題となっています。
         </p>
         <p class="uk-margin">
             しかし、システム開発を伴う<br />
-            <span class="uk-h3">
-                十分な初期資金と一定以上の時間
+            <span class="uk-h3 uk-text-nowrap">
+                十分な初期資金と<wbr/>一定以上の時間
             </span><br/>
             がかかり足踏みしてしまっている方が多く、<br/>
             <br/>
@@ -60,15 +60,12 @@
 
 <div class="uk-section uk-section-large">
     <div class="uk-container uk-text-center">
-        <h2 class="uk-heading-line uk-text-center uk-text-primary"><span>
-            つくラボとやりませんか？
+        <h2 class="uk-heading-line uk-text-center uk-text-primary"><span class="uk-text-nowrap">
+            つくラボと<wbr />やりましょう！
         </span></h2>
         <p class="uk-margin-large">
             つくラボなら<br />
-            多数の事業立ち上げ経験をもとに、<br/>
-            <span class="uk-h3">
-                最短でリリースまでドライブし、
-            </span><br/>
+            多数の事業立ち上げ経験をもとに最短でリリースまでドライブし、<br/>
             <br/>
             <span class="uk-h3">
                 ワンストップでシステム開発を請け負います！
@@ -151,8 +148,8 @@
 
         <div uk-grid class="uk-margin-large">
             <div class="uk-width-1-2@m">
-                <h2 class="uk-text-center uk-text-green">
-                    つくラボだからできること
+                <h2 class="uk-text-center uk-text-green uk-text-nowrap">
+                    つくラボだから<wbr/>できること
                 </h2>
                 <div class="uk-margin-large" uk-grid>
                     <div class="uk-width-auto">
@@ -191,8 +188,8 @@
 
             </div>
             <div class="uk-width-1-2@m">
-                <h2 class="uk-text-center uk-text-red">
-                    つくラボがやらないこと
+                <h2 class="uk-text-center uk-text-red  uk-text-nowrap">
+                    つくラボが<wbr />やらないこと
                 </h2>
                 <div class="uk-margin-large" uk-grid>
                     <div class="uk-width-auto">

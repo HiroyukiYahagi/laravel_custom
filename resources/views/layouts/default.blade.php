@@ -11,7 +11,7 @@
     <div class="uk-navbar-right">
         <div class="uk-navbar-item">
             <a class="uk-button uk-button-primary uk-border-rounded" href="#contact-modal" uk-toggle>
-                無料で事業相談する
+                相談する
             </a>
         </div>
     </div>

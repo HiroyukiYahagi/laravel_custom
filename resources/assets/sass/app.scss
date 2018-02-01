@@ -72,7 +72,7 @@ a:not(.uk-link-reset) {
 @import "~uikit/src/scss/uikit-theme.scss";
 
 .uk-heading-hero {
-    font-family: HGPSoeiKakugothicUB;
+    font-family: $base-heading-font-family;
 }
 
 .nav-logo {
