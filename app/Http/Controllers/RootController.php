@@ -1,30 +1,24 @@
 <?php
-/**
- * ルートコントローラ
- *
- * トップ関連画面を表示するコントローラクラス
- *
- * @author hiroyuki yahagi
- * @category base
- * @package controller
- */
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
-/**
- * ルートコントローラ
- */
+use App\Services\ProductService;
+use App\Services\TagService;
+
 class RootController extends Controller
 {
+    protected $productService;
 
-    public function __construct(){
+    public function __construct(ProductService $productService){
+        $this->productService = $productService;
     }
 
     public function index(){
-        return view('root.index');
+        $products = $this->productService->getAll();
+        return view('root.index', [
+            "products" => $products
+        ]);
     }
-
-
 }

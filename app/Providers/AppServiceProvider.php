@@ -3,6 +3,10 @@
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
+use App\Services\ProductService;
+use App\Services\TagService;
+use App\Services\ContactService;
+use App\Services\OGPService;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -23,6 +27,10 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        //$this->app->singleton(AdministratorService::class, AdministratorService::class);
+        $this->app->singleton(ProductService::class, ProductService::class);
+        $this->app->singleton(TagService::class, TagService::class);
+        $this->app->singleton(ContactService::class, ContactService::class);
+        $this->app->singleton(OGPService::class, OGPService::class);
+        
     }
 }

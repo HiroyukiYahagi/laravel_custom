@@ -71,10 +71,12 @@ a:not(.uk-link-reset) {
 // 4. Import UIkit.
 @import "~uikit/src/scss/uikit-theme.scss";
 
+.uk-heading-hero {
+    font-family: HGPSoeiKakugothicUB;
+}
 
 .nav-logo {
-    filter: brightness(100);
-    height: $navbar-nav-item-height - 16px;
+    height: $navbar-nav-item-height - 24px;
 }
 
 .base{
@@ -134,3 +136,50 @@ a:not(.uk-link-reset) {
         background-color: $lighten-primary-background;
     }
 }
+
+.uk-text-green {
+    color: #49D965 !important;
+}
+
+.uk-text-red {
+    color: #CF0B39 !important;
+}
+
+.uk-text-yellow {
+    color: #F3CD31 !important;
+}
+
+.type_ {
+    background: $global-primary-background !important;
+}
+
+.type_1 {
+    background: #49D965 !important;
+}
+
+.type_2 {
+    background: #CF0B39 !important;
+}
+
+.type_3 {
+    background: #F3CD31 !important;
+}
+
+.type_text_ {
+    color: $global-primary-background !important;
+}
+
+.type_text_1 {
+    color: #49D965 !important;
+}
+
+.type_text_2 {
+    color: #CF0B39 !important;
+}
+
+.type_text_3 {
+    color: #F3CD31 !important;
+}
+
+
+

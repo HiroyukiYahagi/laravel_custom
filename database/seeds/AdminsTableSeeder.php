@@ -2,6 +2,8 @@
 
 use Illuminate\Database\Seeder;
 
+use App\Models\Admin;
+
 class AdminsTableSeeder extends Seeder
 {
     /**
@@ -11,6 +13,9 @@ class AdminsTableSeeder extends Seeder
      */
     public function run()
     {
-        //
+        Admin::create([
+            "email" => "yahagi1989@gmail.com",
+            "password" => "welcome1"
+        ]);
     }
 }

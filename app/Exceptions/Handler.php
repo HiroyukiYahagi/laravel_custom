@@ -72,11 +72,11 @@ class Handler extends ExceptionHandler
           return response()->json(['error' => 'Unauthenticated.'], 401);
         }
 
-        Auth::guard("user")->logout();
+        Auth::guard("web")->logout();
 
         switch($exception->guards()[0]){
-        case 'user':
-            return redirect()->route('user.login');
+        case 'web':
+            return redirect()->route('admin.login');
         default:
             return redirect('/');
         }
@@ -97,11 +97,11 @@ class Handler extends ExceptionHandler
           return response()->json(['error' => 'AccessDenied.'], 403);
         }
 
-        Auth::guard("user")->logout();
+        Auth::guard("web")->logout();
 
         switch($exception->guards()[0]){
-        case 'user':
-            return redirect()->route('user.login');
+        case 'web':
+            return redirect()->route('admin.login');
         default:
             return redirect('/');
         }

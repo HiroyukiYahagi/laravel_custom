@@ -19,17 +19,24 @@ use Illuminate\Database\Eloquent\Model;
  */
 class Product extends Model
 {
+    protected $dates = [
+        "started_at", "released_at"
+    ];
+
     /**
      * @var array
      */
-    protected $fillable = ['product_type_id', 'started_at', 'released_at', 'title', 'image_url', 'url', 'created_at', 'updated_at'];
+    protected $fillable = ['product_type_id', 'started_at', 'released_at', 'title', 'image_url', 'description', 'url', 'created_at', 'updated_at'];
 
     /**
      * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
      */
     public function productType()
     {
-        return $this->belongsTo('App\Models\ProductType');
+        return $this->belongsTo('App\Models\ProductType')->withDefault([
+            "label" => "その他",
+            "color" => "#C0C0C0"
+        ]);
     }
 
     /**
@@ -37,6 +44,6 @@ class Product extends Model
      */
     public function tags()
     {
-        return $this->belongsToMany('App\Models\TagRelation', 'tag_product_relations');
+        return $this->belongsToMany('App\Models\Tag', 'tag_relations');
     }
 }
