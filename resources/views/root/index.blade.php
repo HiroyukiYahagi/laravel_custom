@@ -7,7 +7,7 @@
         <div uk-grid class="uk-margin-large uk-flex-bottom">
             <div class="uk-width-2-3@s">
                 <div class="uk-heading-hero uk-text-center">
-                    爆速リリース<br/>
+                    超特急開発<br/>
                     しませんか？
                 </div>
                 <h1 class="uk-text-center  uk-text-nowrap">
@@ -238,11 +238,40 @@
     </div>
 </div>
 
+<div class="uk-section uk-section-large uk-section-default">
+    <div class="uk-container">
+        <h2 class="uk-text-center uk-text-primary uk-text-nowrap">
+            つくラボの<wbr/>メンバー
+        </h2>
+        <div uk-grid class="uk-margin-large">
+            <div class="uk-width-medium@m uk-text-center">
+                <div class="image-wrapper uk-border-circle uk-width-medium uk-display-inline-block">
+                    <img src="{{asset('img/face.jpg')}}">
+                </div>
+            </div>
+            <div class="uk-width-expand">
+                <h3>
+                    矢作 裕之
+                </h3>
+                <p>
+                    2014年 東京大学工学部卒<br/>
+                    同年 日本オラクル株式会社でITコンサルタントとして3年半サーバサイドを中心としたコンサルティングに関与。<br/>
+                    2017年エンジニアとして独立しつくラボを設立。<br/>
+                    <br/>
+                    株式会社バイオフィリア CTO<br/>
+                    つくラボ代表<br/>
+                    インフラエンジニア、サーバエンジニア、Webデザイナー、コンサルタント、起業家、個人投資家、
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
 
 <div class="uk-section uk-section-large uk-section-muted">
     <div class="">
-        <h2 class="uk-text-center uk-text-primary">
-            ポートフォリオ
+        <h2 class="uk-text-center uk-text-primary uk-text-nowrap">
+            つくラボの<wbr/>ポートフォリオ
         </h2>
         <section id="cd-timeline" class="cd-container">
 
@@ -282,9 +311,9 @@
         <div uk-height-viewport uk-overflow-auto class="uk-padding-large">
             <div class="uk-flex-center" uk-grid>
                 <div class="uk-width-xlarge@s">
-                    <h2>
+                    <h3>
                         お問い合わせフォーム
-                    </h2>
+                    </h3>
                     <form action="{{route('contacts.add')}}" method="POST">
                         {{ csrf_field() }}
                         <div class="uk-margin">
